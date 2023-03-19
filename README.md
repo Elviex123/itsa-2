@@ -13,7 +13,8 @@
 * 一列表一個運算結果。虛數的格式為a b。
 
 ## 程式碼
-'''
+
+
 #include<iostream>  
 using namespace std;
 
@@ -46,7 +47,7 @@ int main()
     }
     return 0;
 }
-'''
+
 
 ## 題目解析 ：
 
