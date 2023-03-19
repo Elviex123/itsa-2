@@ -12,7 +12,7 @@
 
 * 輸出最大公因數
 
-## 程式碼
+## 程式碼 ：
 
     #include<iostream>  
     using namespace std;
