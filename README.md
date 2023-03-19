@@ -12,7 +12,7 @@
 
 * 反轉後的矩陣。
 
-## 程式碼
+## 程式碼 ：
 
     #include<iostream>  
     #include<string>  
