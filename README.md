@@ -13,6 +13,40 @@
 * 一列表一個運算結果。虛數的格式為a b。
 
 ## 程式碼
+'''
+#include<iostream>  
+using namespace std;
+
+int main()
+{
+    int input = 0;
+
+    cin >> input;
+    while (input)
+    {
+        int a = 0, ai = 0, b = 0, bi = 0;
+        char ch;
+
+        cin >> ch >> ai >> a >> bi >> b;
+        switch (ch)   
+        { 
+            case '+':
+                cout << ai + bi << " " << a + b << endl; 
+                break;
+            case '-':
+                cout << ai - bi << " " << a - b << endl; 
+                break;
+            case '*'
+                :cout << ai * bi - a * b << " " << a * bi + ai * b << endl; 
+                break;
+            case '/'
+                :cout << (ai * bi + a * b) / (bi * bi + b * b) << " " << a * bi - ai * b / (bi * bi + b * b) << endl;
+                break;
+        }
+    }
+    return 0;
+}
+'''
 
 ## 題目解析 ：
 
