@@ -3,35 +3,25 @@
 
 #include<iostream>  
 using namespace std;
-
+int euc(int a, int b);
 int main()
 {
-    int input = 0;
-
-    cin >> input;
-    while (input)
+    int input = 0, input2 = 0, c = 0;
+    cin >> input >> input2;
+    if (input < input2)
     {
-        int a = 0, ai = 0, b = 0, bi = 0;
-        char ch;
-
-        cin >> ch >> ai >> a >> bi >> b;
-        switch (ch)   
-        { 
-            case '+':
-                cout << ai + bi << " " << a + b << endl; 
-                break;
-            case '-':
-                cout << ai - bi << " " << a - b << endl; 
-                break;
-            case '*'
-                :cout << ai * bi - a * b << " " << a * bi + ai * b << endl; 
-                break;
-            case '/'
-                :cout << (ai * bi + a * b) / (bi * bi + b * b) << " " << a * bi - ai * b / (bi * bi + b * b) << endl;
-                break;
-        }
+        c = input;
+        input = input2;
+        input2 = c;
     }
+    cout << euc(input, input2) << endl;
     return 0;
+}
+int euc(int a, int b)
+{
+    int f = a % b;
+    if (f == 0) return b;
+    else return euc(b, f);
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
