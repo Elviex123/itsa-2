@@ -23,7 +23,7 @@
         int input = 0;
 
         cin >> input;
-        while (input)
+        while (input--)
         {
             int a = 0, ai = 0, b = 0, bi = 0;
             char ch;
