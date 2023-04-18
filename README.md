@@ -15,35 +15,26 @@
 ## 程式碼 ：
 
 
-    #include<iostream>  
+   #include <iostream>
+    #include <iomanip>
     using namespace std;
-
-        int main()
-        {
-        int input = 0;
-
-        cin >> input;
-        while (input--)
-        {
-            int a = 0, ai = 0, b = 0, bi = 0;
-            char ch;
-            cin >> ch >> ai >> a >> bi >> b;
-            switch (ch)   
-            { 
-                case '+':
-                    cout << ai + bi << " " << a + b << endl; 
-                    break;
-                case '-':
-                    cout << ai - bi << " " << a - b << endl; 
-                    break;
-                case '*':
-                    cout << ai * bi - a * b << " " << a * bi + ai * b << endl; 
-                    break;
-                case '/':
-                    cout << (ai * bi + a * b) / (bi * bi + b * b) << " " << a * bi - ai * b / (bi * bi + b * b) << endl;
-                    break;
-            }
+    int main()
+    {
+	    double a[10];
+        double max=0.0, min=0.0;
+        for (int i = 0; i < 10; i++) 
+	    {
+            cin >> a[i];
         }
+        max = a[0];
+        min = a[0];
+        for (int i = 0; i < 10; i++) 
+        {
+    	    if (a[i] > max)max = a[i];
+            if (a[i] < min)min = a[i];
+        }
+        cout << "maximum:" << fixed << setprecision(2) << max << endl;
+        cout << "minimum:" << fixed << setprecision(2) << min << endl;
         return 0;
     }
 
