@@ -30,7 +30,7 @@
         {    
             if (i < num1_len)n1[34 - i] = num1[num1_len - 1 - i] - '0'; 
             if (i < num2_len)n2[34 - i] = num2[num2_len - 1 - i] - '0';    
-            sum[i] = n1[34 - i] + n2[34 - i];//倒過來從個位數開始，比較好計算    
+            sum[i] = n1[34 - i] + n2[34 - i];
         };     
         for (int j = 0; j < 35; j++)
         {   
