@@ -14,15 +14,12 @@
 ## 程式碼 ：
 
 
-#include<iostream>    
-#include<string>    
-#include<sstream>  
-    
-    
-using namespace std;    
-    
-string plus_stacks(const string& num1, const string& num2) 
-{
+    #include<iostream>    
+    #include<string>    
+    #include<sstream>     
+    using namespace std;     
+    string plus_stacks(const string& num1, const string& num2) 
+    {
     int n1[35] = { 0 };    
     int n2[35] = { 0 };    
     int sum[35] = { 0 };
