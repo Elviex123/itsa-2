@@ -32,7 +32,7 @@
         }  
         cout << (long long)sum << endl;    
         return 0;  
-        }  
+    }  
 ## 題目解析 ：
 
 *  令a和b表示實部，ai和bi表示虛部
