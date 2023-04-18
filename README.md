@@ -31,9 +31,9 @@
         for (int i = 0; i < 10; i++) 
         {
     	    if (a[i] > max)
-	    	max = a[i];
+	    		max = a[i];
             if (a[i] < min)
-	    	min = a[i];
+	    		min = a[i];
         }
         cout << "maximum:" << fixed << setprecision(2) << max << endl;
         cout << "minimum:" << fixed << setprecision(2) << min << endl;
