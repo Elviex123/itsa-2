@@ -15,34 +15,62 @@
 ## 程式碼 ：
 
 
-    #include <iostream>  
-    #include <iomanip>  
-    using namespace std;  
-    int main()  
-    {  
-        double a[10];  
-        double max=0.0, min=0.0;  
-        for (int i = 0; i < 10; i++)   
-        {  
-            cin >> a[i];  
+    #include<iostream>   
+    using namespace std;   
+    int main()   
+    {   
+        int board[3][3];  
+        int flag;   
+        bool compare=false;   
+        for (int i = 0; i < 3; i++) 
+        {   
+            for (int j = 0; j < 3; j++) 
+            {   
+                cin >> board[i][j]; 
+            }   
+        }     
+        for (int i=0; i < 2; i++) 
+        {   
+            flag = 0;   
+            for (int j=0; j < 2; j++) 
+            {   
+                if (board[i][j] == board[i][j+1])
+                flag++;
+            }   
+            if (flag == 2)compare = true;   
+        }   
+        for (int i=0; i < 2; i++) 
+        {   
+            flag = 0;   
+            for (int j=0; j < 2; j++) 
+            {   
+                if (board[j][i] == board[j+1][i])
+                flag++;   
+            }   
+            if (flag == 2)compare = true;   
+        }   
+        flag = 0;   
+        for (int i=0; i < 2; i++) 
+        {    
+            if (board[i][i] == board[i + 1][i + 1])
+            flag++;   
+            if (flag == 2)compare = true;   
+        }   
+        flag = 0;   
+        for (int i=0; i < 2; i++) 
+        {
+            if (board[2 - i][i] == board[1 - i][i+1])
+            flag++;   
+            if (flag == 2)compare = true;   
+        }   
+        if (compare == true)cout << "True" << endl;   
+        else cout << "False" << endl;   
+        return 0;   
         }  
-        max = a[0];
-        min = a[0];  
-        for (int i = 0; i < 10; i++)   
-        {  
-            if (a[i] > max)max = a[i];  
-            if (a[i] < min)min = a[i];  
-        }  
-        cout << "maximum:" << fixed << setprecision(2) << max << endl;  
-        cout << "minimum:" << fixed << setprecision(2) << min << endl;  
-        return 0;  
-    }  
 
 
 ## 題目解析 ：
 
-*  令a和b表示實部，ai和bi表示虛部
-*  依據輸入的行數遞減計算次數
-*  ch為運算符號 
-*  依據運算符號來決定計算方式 
-*  依據運算符號輸出計算公式的答案 
+*  
+*  
+*  
