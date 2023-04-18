@@ -63,7 +63,6 @@
         {    
             string num1,num2;    
             cin >> num1 >> num2;    
-           
             cout<<plus_stacks(num1, num2)<<endl;   
         };    
     }  
