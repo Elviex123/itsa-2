@@ -66,7 +66,7 @@
         if (compare == true)cout << "True" << endl;   
         else cout << "False" << endl;   
         return 0;   
-        }  
+    }  
 
 
 ## 題目解析 ：
