@@ -18,40 +18,21 @@
 
 ## 程式碼 ：
 
-
-    #include<iostream>  
-    using namespace std;
-
-        int main()
-        {
-        int input = 0;
-
-        cin >> input;
-        while (input--)
-        {
-            int a = 0, ai = 0, b = 0, bi = 0;
-            char ch;
-            cin >> ch >> ai >> a >> bi >> b;
-            switch (ch)   
-            { 
-                case '+':
-                    cout << ai + bi << " " << a + b << endl; 
-                    break;
-                case '-':
-                    cout << ai - bi << " " << a - b << endl; 
-                    break;
-                case '*':
-                    cout << ai * bi - a * b << " " << a * bi + ai * b << endl; 
-                    break;
-                case '/':
-                    cout << (ai * bi + a * b) / (bi * bi + b * b) << " " << a * bi - ai * b / (bi * bi + b * b) << endl;
-                    break;
-            }
-        }
-        return 0;
-    }
-
-
+    #include<iostream>    
+    using namespace std;   
+    int main()  
+    {  
+        long double r, n, p;  
+        double sum = 0.0;
+        cin >> r >> n >> p;  
+        r += 1.0;  
+        for (int i = 1; i <= n; i++) 
+        {  
+            sum = (sum + p) * r;  
+        }  
+        cout << (long long)sum << endl;    
+        return 0;  
+        }  
 ## 題目解析 ：
 
 *  令a和b表示實部，ai和bi表示虛部
