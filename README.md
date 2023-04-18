@@ -19,6 +19,7 @@
     using namespace std;
     int main()
     {
+    
 	double a[10];
         double max=0.0, min=0.0;
         for (int i = 0; i < 10; i++) 
