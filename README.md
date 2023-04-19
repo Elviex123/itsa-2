@@ -40,10 +40,10 @@
         for (int j = 0; j < 26; j++)  
         {  
             for (map<char, int>::iterator p = F.begin(); p != F.end(); p++) 
-			{  
-                if (Englishword[j] == (*p).first && (*p).second != 0) 
-				{  
-                    cout<< (*p).first << " : " << (*p).second << endl;  
+	    {  
+               	if (Englishword[j] == (*p).first && (*p).second != 0) 
+		{  
+			cout<< (*p).first << " : " << (*p).second << endl;  
                 };  
             };  
         };  
