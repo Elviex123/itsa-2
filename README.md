@@ -34,3 +34,4 @@
         a++;return a+=appearNum(s,p+1,l);  
     }   
 ## 題目解析 ：
+* 字串用遞迴
