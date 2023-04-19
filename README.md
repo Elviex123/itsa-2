@@ -39,4 +39,5 @@
         cout << (long long)sum << endl;    
         return 0;  
     }  
-## 題目解析 ：
+## 題目解析 ：  
+* sum =總和
