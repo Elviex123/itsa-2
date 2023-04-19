@@ -27,9 +27,10 @@
 	    {
             cin >> a >> b;    
             for (int j = a; j < b; j++) 
-		    {    
+		{    
                 time[j]++;    
-                if (time[j] > cars)cars = time[j];    
+                if (time[j] > cars)
+			cars = time[j];    
             };    
         }    
         cout << cars << endl;    
